@@ -5,14 +5,14 @@ const groceryObject = {
             type: String,
             required: [true, "name is required"],
             trim: true,
-            maxlength: [50, "name can\'t have more than 20 characters"],
-            minlength: [3, "can\'t have less than 3 characters"]
+            maxlength: [500, "name can\'t have more than 20 characters"],
+            minlength: [1, "can\'t have less than 3 characters"]
         },
         term: {
             type: String,
             required: [true, "name is required"],
             trim: true,
-            maxlength: [50, "term can\'t have more than 20 characters"],
+            maxlength: [500, "term can\'t have more than 20 characters"],
             minlength: [3, "can\'t have less than 3 characters"]
         },
         department: {
@@ -30,7 +30,7 @@ const groceryObject = {
             type: String,
             required: [true, "details required"],
             trim: true,
-            maxlength: [200, "details  can\'t have more than 200 characters"],
+            maxlength: [2000000, "details  can\'t have more than 200 characters"],
             minlength: [3, "can\'t have less than 5 characters"]
         },
     }
